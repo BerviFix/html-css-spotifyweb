@@ -15,7 +15,6 @@ body {
 main {
   display: flex;
   height: calc(100% - 90px);
-
 }
 .main_nav {
   display: flex;
@@ -48,6 +47,7 @@ img {
   align-items: center;
   color: lightgray;
   opacity: 0.7;
+  cursor:pointer;
 }
 .nav_list li:hover {
   border-left: 4px solid #ADFF2F;
@@ -67,19 +67,65 @@ img {
   flex-direction: column;
   width: 100%;
   list-style: none;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.playlist h4 {
+  font-size: 16px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 10px;
+}
+.new_playlist {
+  display: flex;
+  padding-bottom: 15px;
+}
+.add_playlist_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: lightgray;
+  cursor:pointer;
+}
+.add_playlist_btn i {
+  font-size: 20px;
+  color: black;
+}
+.new_playlist h5 {
+  align-self: center;
+  padding-left: 10px;
+  font-size: 16px;
+  color: lightgray;
+  opacity: 0.7;
+  cursor:pointer;
+}
+.new_playlist h5:hover {
+  color: white;
+  opacity: 1;
 }
 .playlist li {
   display: flex;
   text-decoration: none;
-  padding: 5px 20px;
+  padding: 10px 0;
   align-items: center;
   color: lightgray;
   opacity: 0.7;
-}
-.playlist h4 {
-  font-size: 15px;
+  cursor:pointer;
   font-weight: bolder;
+}
+.playlist li:hover {
   color: white;
+  opacity: 1;
+}
+.nav_bottom {
+  align-items: flex-end;
+}
+.app_download {
+  display: flex;
+  padding-left: 15px;
 }
 
 .main_content {
@@ -99,11 +145,15 @@ img {
 .btn_upgrade {
   width: 200px;
   height: 40px;
-  padding: 10px;
+  padding: 12px 24px;
   background-color: transparent;
   border: 1px solid white;
   border-radius: 100px;
   color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bolder;
 }
 
 footer {
