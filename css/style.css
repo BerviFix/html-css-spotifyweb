@@ -40,16 +40,19 @@ img {
   width: 100%;
   list-style: none;
 }
-
 .nav_list li {
   display: flex;
   height: 40px;
   text-decoration: none;
   padding: 5px 20px;
   align-items: center;
+  color: lightgray;
+  opacity: 0.7;
 }
-.nav_list li:first-child {
+.nav_list li:hover {
   border-left: 4px solid #ADFF2F;
+  color: white;
+  opacity: 1;
 }
 .nav_list li i {
   font-size: 25px;
@@ -57,6 +60,26 @@ img {
 .nav_list span {
   padding-left: 10px;
   font-weight: bolder;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+}
+.playlist li {
+  display: flex;
+  text-decoration: none;
+  padding: 5px 20px;
+  align-items: center;
+  color: lightgray;
+  opacity: 0.7;
+}
+.playlist h4 {
+  font-size: 15px;
+  font-weight: bolder;
+  color: white;
 }
 
 .main_content {
