@@ -19,6 +19,9 @@ body {
 .hidden {
   visibility: hidden;
 }
+.padding_l_9 {
+  padding-left: 9px;
+}
 
 main {
   display: flex;
@@ -42,7 +45,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-img {
+.logo_container img {
   width: 80%;
   height: 50px;
 }
@@ -310,4 +313,114 @@ footer {
   width: 100%;
   height: 90px;
   background-color: #282828;
+}
+.wrapper_footer {
+  display: flex;
+  width: 99%;
+  margin: auto;
+}
+.song {
+  display: flex;
+  width: 13%;
+  height: 90px;
+  align-items: center;
+}
+.cover_song_playing {
+  width: 60px;
+  height: 60px;
+}
+.cover_song_playing img {
+  width: 100%;
+  height: 100%;
+}
+.song_info {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+.song_info h5 {
+  color: lightgray;
+  opacity: 0.7;
+}
+.song .icons {
+  display: flex;
+  padding-left: 30px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+  align-items: center;
+}
+.player_top {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  padding-top: 20px;
+}
+.player_top i {
+  padding: 0 10px;
+  font-size: 18px;
+}
+.player_top i:nth-child(3) {
+  font-size: 35px;
+}
+.player_top i:nth-child(3):hover {
+  font-size: 40px;
+}
+
+.player_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+}
+.player_bar {
+  display: inline-block;
+  width: 50%;
+  height: 5px;
+  background-color: #5A5A5A;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin: 0 30px;
+}
+.current_value_player_bar {
+  display: inline-block;
+  width: 30%;
+  height: 5px;
+  background-color: white;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+
+.media_control {
+  display: flex;
+  width: 15%;
+  height: 90px;
+  align-items: center;
+}
+.media_control i {
+  padding: 0 5px;
+}
+.volume_bar {
+  display: inline-block;
+  width: 100%;
+  height: 5px;
+  background-color: #5A5A5A;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.current_value_volume_bar {
+  display: inline-block;
+  width: 30%;
+  height: 5px;
+  background-color: white;
+  vertical-align: top;
+  border-radius: 5px;
 }
