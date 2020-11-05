@@ -17,11 +17,17 @@ main {
   height: calc(100% - 90px);
 }
 .main_nav {
-  display: flex;
-  flex-direction: column;
   width: 250px;
   height: 100%;
   background-color: black;
+  min-height: 480px;
+}
+.nav_top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 90px);
+  overflow: hidden;
 }
 .logo_container {
   display: flex;
@@ -69,6 +75,8 @@ img {
   list-style: none;
   padding-left: 20px;
   padding-top: 30px;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 .playlist h4 {
   font-size: 16px;
@@ -106,7 +114,11 @@ img {
   color: white;
   opacity: 1;
 }
-.playlist li {
+.list_playlist {
+  height: 60%;
+  overflow-y: auto;
+}
+.list_playlist li {
   display: flex;
   text-decoration: none;
   padding: 10px 0;
@@ -116,26 +128,60 @@ img {
   cursor:pointer;
   font-weight: bolder;
 }
-.playlist li:hover {
+.list_playlist li:hover {
   color: white;
   opacity: 1;
 }
 .nav_bottom {
-  align-items: flex-end;
+  width: 100%;
+  height: 90px;
+  padding-bottom: 18px;
 }
 .app_download {
+  width: 82%;
+  height: 30px;
   display: flex;
-  padding-left: 15px;
+  margin-left: 20px;
+  border-bottom: 1px solid white;
+  cursor:pointer;
 }
+.app_download i {
+  font-size: 15px;
+}
+.app_download h4 {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.user_name {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+  margin-left: 20px;
+  padding-top: 25px;
+  cursor:pointer;
+}
+.user_name i {
+  font-size: 30px;
+}
+.user_name h4 {
+  padding-left: 10px;
+}
+
 
 .main_content {
   width: calc(100% - 25px);
   height: 100%;
   background-color: #141922;
+  overflow-y: auto;
 }
 .upgrade_btn {
   display: flex;
-  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100% - 250px);
   height: 80px;
   padding: 10px;
   flex-direction: row-reverse;
