@@ -35,6 +35,8 @@ main {
   min-height: 480px;
 }
 .nav_top {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: calc(100% - 90px);
   overflow: hidden;
@@ -125,7 +127,7 @@ main {
   opacity: 1;
 }
 .list_playlist {
-  height: 60%;
+  height: 80%;
   overflow-y: auto;
 }
 .list_playlist li {
@@ -224,7 +226,7 @@ main {
   font-size: 13px;
   color: lightgray;
   opacity: 0.7;
-  padding: 0 10px;
+  padding: 5px 10px;
 }
 .active::after {
   content: "";
@@ -236,15 +238,15 @@ main {
 }
 
 .row_container {
-  display: flex;
-  justify-content: space-between;
   padding: 20px 0;
-  text-align: center;
 }
 .song_container {
+  display: inline-block;
   position: relative;
   width: 200px;
-  height: 300px;
+  height: 280px;
+  margin: 0 10px;
+  text-align: center;
 }
 .cover_song img {
   width: 100%;
@@ -304,6 +306,8 @@ main {
 }
 .wrapper_content h5 {
   padding-top: 10px;
+  color: lightgray;
+  opacity: 0.7;
 }
 .wrapper_content h4 {
   padding-top: 15px;
@@ -312,26 +316,25 @@ main {
 footer {
   width: 100%;
   height: 90px;
+  display: flex;
+  justify-content: space-between;
   background-color: #282828;
 }
-.wrapper_footer {
-  display: flex;
-  width: 99%;
-  margin: auto;
-}
+
 .song {
   display: flex;
-  width: 13%;
-  height: 90px;
+  width: 250px;
+  height: 100%;
   align-items: center;
 }
 .cover_song_playing {
   width: 60px;
   height: 60px;
 }
-.cover_song_playing img {
-  width: 100%;
-  height: 100%;
+.song img {
+  width: 60px;
+  height: 60px;
+  margin-left: 10px;
 }
 .song_info {
   width: 100px;
@@ -343,15 +346,15 @@ footer {
   color: lightgray;
   opacity: 0.7;
 }
-.song .icons {
-  display: flex;
-  padding-left: 30px;
+.icons {
+  margin-left: 30px;
+  text-align: center;
 }
 
 .player {
   display: flex;
   flex-direction: column;
-  width: 72%;
+  width: 40%;
   align-items: center;
 }
 .player_top {
@@ -381,7 +384,7 @@ footer {
 }
 .player_bar {
   display: inline-block;
-  width: 50%;
+  width: 80%;
   height: 5px;
   background-color: #5A5A5A;
   border-radius: 5px;
@@ -400,16 +403,18 @@ footer {
 
 .media_control {
   display: flex;
-  width: 15%;
-  height: 90px;
+  width: 250px;
+  height: 100%;
+  justify-content: flex-end;
   align-items: center;
+  margin-right: 10px;
 }
 .media_control i {
   padding: 0 5px;
 }
 .volume_bar {
   display: inline-block;
-  width: 100%;
+  width: 40%;
   height: 5px;
   background-color: #5A5A5A;
   border-radius: 5px;
